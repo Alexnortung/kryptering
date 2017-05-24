@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>kryptering Applikation</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="./rangeslider/rangeslider.min.js"></script>
+	<script type="text/javascript" src="./p5.min.js"></script>
+	<script src="./bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./kryptering.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<div class="jumbotron">
+		<h1>Krypterings Applikation</h1>
+		<p>Cæsar kryptering</p>
+	</div>
+
+</div>
+
+<div class="container">
+	<div id="canvasDiv">
+		
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<select id="method">
+					<option value="0">krypter</option>
+					<option value="1">dekrypter</option>
+				</select>
+				<br>
+				<br>
+
+				<input type="text" name="text" id="input">
+				<label for="input">Input</label>
+				<br>
+
+				<input type="number" name="forskydning" id="forskydning">
+				<label for="forskydning">Forskydning</label>
+				<br>
+
+				<input
+				    type="range"
+				    min="0"
+				    max="29"                  
+				    step="1"
+				    value="0"
+				    data-orientation="horizontal" 
+				    id="rangesliderforskydning"
+				>
+
+				<input type="text" name="startLetters" id="startLetters">
+				<label for="startLetters">Start bogstaver</label>
+				<br>
+
+				<input type="text" name="key" id="key">
+				<label for="key">Nøgle</label>
+				<br>
+
+				<input type="text" name="output" id="output">
+				<label for="output">Output</label>
+			</div>
+		</div>
+	</div>
+	
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
